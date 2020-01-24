@@ -1,0 +1,392 @@
+//-------------- Color ----------------//
+$black: #333;
+$white: #fff;
+$navy: #000080;
+$pink: #f39b8b;
+$orange: #FFC9A8;
+$gold: #a28b76;
+
+//-------------- Common ----------------//
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: $black;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1.5em;
+  display: inline-block;
+  &:before, &:after {
+    content:'';
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+  }
+  &:before {
+    border-left: solid 3px #ff5722;
+    border-top: solid 3px #ff5722;
+    top:0;
+    left: 0;
+  }
+  &:after {
+    border-right: solid 3px #ff5722;
+    border-bottom: solid 3px #ff5722;
+    bottom:0;
+    right: 0;
+  }
+}
+
+.btn-default {
+  width: 400px;
+  box-shadow: 0 5px darken($pink, 10%);
+  background: $pink;
+  color: $white;
+  transition: .3s;
+  &:hover {
+    transition: .3s;
+    color: $white;
+    opacity: .6;
+  }
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+}
+
+
+//-------------- Header ----------------//
+header {
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0 .5px 5px #666;
+}
+.navbar {
+  padding: 20px;
+}
+.navbar-brand {
+  &__img {
+    width: 200px;
+    height: auto;
+  }
+}
+.nav-item {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+//-------------- Jumbotron ----------------//
+.jumbotron {
+  position: relative;
+  border-radius: 0;
+  border-bottom: 5px solid $black;
+  padding-top: 150px;
+  height: 580px;
+  background: $white;
+  .container {
+    height: 100%;
+    position: relative;
+  }
+  &:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: $black;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+  &__img {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    width: 420px;
+    height: auto;
+  }
+  h1 {
+    text-shadow: 3px 3px #999;
+    color: $black;
+    font-weight: bold;
+    letter-spacing: 20px;
+    line-height: 5rem;
+    span {
+      color: $pink;
+      text-shadow: 3px 3px lighten($pink, 15%);
+    }
+  }
+}
+
+//-------------- Consulting ----------------//
+.consulting {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  .title {
+    display: block;
+  }
+  &__description {
+    margin-top: 3rem;
+    &--item {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .consulting-text {
+        width: 80%;
+        padding: 1rem;
+        border-left: 5px solid $gold;
+        border-bottom: 3px dashed $gold;
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+      .consulting-illust {
+        width: 20%;
+        &__number {
+          font-size: 2rem;
+          text-align: center;
+          color: $gold;
+        }
+        .fas {
+          padding: 0 1rem;
+          height: 100%;
+          color: $gold;
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
+
+
+//-------------- Consulting2 ----------------//
+.consulting-2 {
+  text-align: center;
+  &__sub-title {
+    border-bottom: 2px dashed $black;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    display: inline-block;
+    line-height: 3rem;
+    &:first-letter {
+      font-size: 2em;
+      color: $pink;
+    }
+  }
+}
+
+.card-wrap {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 1px 3px lightgray;
+  height: 250px;
+  &__title {
+    border-radius: 10px 10px 0 0;
+    color: $white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    background: $gold;
+  }
+  &__body {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    text-align: left;
+  }
+}
+
+
+//-------------- Vacancy ----------------//
+.vacancy {
+  text-align: center;
+  .title {
+    display: block;
+  }
+  &__list {
+    margin: 6rem auto 0 5rem;
+    &--item {
+      position: relative;
+      &:first-of-type {
+        margin-top: 0;
+      }
+      margin-top: 1.5rem;
+      font-size: 1.4rem;
+      &:before {
+        transform: translateY(-50%);
+        top: 50%;
+        position: absolute;
+        left: -40px;
+        content:  "";
+        width:  20px;
+        height:  20px;
+        display:  inline-block;
+        background-color: $gold;
+        border-radius:  50%;
+      }
+    }
+  }
+  h3 {
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: $white;
+    border-radius: 200px;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    background: $gold;
+  }
+}
+
+//-------------- Borrow ----------------//
+.borrow {
+  text-align: center;
+  .title {
+    display: block;
+  }
+}
+
+.circle-wrap {
+  margin-top: 5rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+
+.circle-card {
+  padding-top: 7.5rem;
+  font-size: 1.3rem;
+  color: $white;
+  margin: 1.5rem auto 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: $gold;
+}
+
+
+//-------------- Build ----------------//
+.build {
+  text-align: center;
+  .title {
+    display: block;
+  }
+  h3 {
+    margin-top: 3rem;
+    border-bottom: 2px dashed $black;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 3rem;
+    &:first-letter {
+      font-size: 2em;
+      color: $pink;
+    }
+  }
+}
+
+
+//-------------- Contact ----------------//
+.contact {
+  text-align: center;
+  .title {
+    display: block;
+  }
+  form {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 3rem;
+  }
+}
+.input {
+  width: 2rem;
+}
+
+
+//-------------- Footer ----------------//
+footer {
+  background-color: $black;
+  width: 100%;
+  bottom: 0;
+  font-weight: lighter;
+  .container {
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: left;
+    align-self: center;
+  }
+  h3, p, li {
+    color: $white;
+  }
+  li {
+    margin-top: .4rem;
+  }
+  .footerHeader{
+    width:100%;
+    padding:1em;
+    background-color: lighten($black, 10%);
+    text-align:center;
+    color:white;
+  }
+  h3 {
+    font-weight:lighter;
+  }
+  iframe {
+    width:100%;
+    position:relative;
+    height: 300px;
+  }
+  .sm{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style:none;
+    overflow:auto;
+    li {
+      margin-right: 1rem;
+      &:last-of-type {
+        margin-right: none;
+      }
+      a {
+        img {
+          width:32px;
+        }
+      }
+    }
+  }
+}

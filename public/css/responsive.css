@@ -1,0 +1,326 @@
+@media screen and (max-width:1240px) {
+  .member {
+    background-color: #fff;
+    height: 70rem;
+    width: 100%;
+    padding-top: 10rem;
+    text-align: center;
+  }
+  .member__top {
+    margin: 0 auto;
+    text-align: center;
+    width: 88%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  .top_image {
+    width: auto;
+    height: 200px;
+    margin: 0 5% 0 0;
+    display: block;
+  }
+  .member__top--right {
+    text-align: left;
+  }
+  .member__main-title {
+    display: block;
+    width: 40%;
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: solid 1px #333;
+  }
+  .member__main {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 3rem;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 1.6rem;
+    position: relative;
+    line-height: 1.4;
+    padding: 0.25em 1.5em;
+    display: inline-block; }
+    .title:before, .title:after {
+      content: '';
+      width: 20px;
+      height: 20px; }
+    .title:before {
+      border-left: solid 3px #ff5722;
+      border-top: solid 3px #ff5722;
+      top: -10px;
+      left: 0; }
+    .title:after {
+      border-right: solid 3px #ff5722;
+      border-bottom: solid 3px #ff5722;
+      bottom: -10px;
+      right: 0; }
+
+  .jumbotron {
+    padding-bottom: 0;
+    border-radius: 0; }
+    .jumbotron__img {
+      width: 150%;
+      right: -30px;
+      bottom: 0; }
+    .jumbotron h1 {
+      font-size: 4rem;
+      letter-spacing: 10px;
+      line-height: 5rem; }
+
+  .consulting__description--item .consulting-text {
+    font-size: 1rem;
+    line-height: 1.2rem; }
+  .consulting__description--item .consulting-illust {
+    width: 20%; }
+    .consulting__description--item .consulting-illust__number {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #a28b76; }
+      .member__top--right {
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1.0rem;
+      }
+    }
+
+@media screen and (max-width: 500px) {
+  .btn-default {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding-top: 40px; }
+
+  .title {
+    font-size: 1rem; }
+
+  .jumbotron {
+    padding-top: 120px;
+    padding-bottom: 0;
+    border-radius: 0; }
+    .jumbotron__img {
+      width: 150%;
+      right: -16px; }
+    .jumbotron h1 {
+      font-size: 2.5rem;
+      letter-spacing: 10px;
+      line-height: 4rem; }
+
+  .consulting__description--item .consulting-illust {
+    width: 20%; }
+    .consulting__description--item .consulting-illust__number {
+      font-size: 1.2rem; }
+    .consulting__description--item .consulting-illust .fas {
+      font-size: 2rem; }
+
+      .consulting-text {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        padding: 1rem 1rem 0;
+      }
+
+  .consulting-2 .card-wrap {
+    grid-template-columns: repeat(2, minmax(auto, 1fr)); }
+  .consulting-2 .title {
+    font-size: .75rem;
+    font-weight: bold;}
+  .consulting-2__sub-title {
+    font-size: .8rem;
+    line-height: 1.4rem; }
+    .consulting-2__sub-title:first-letter {
+      font-size: 1.6rem;
+      color: #f39b8b; }
+
+      .card__body {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        padding: 1rem 1rem 0;
+        text-align: left;
+      }
+      .card {
+        height: 160px;
+      }
+
+  .circle-wrap {
+    margin-top: 5rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(180px, 1fr)); }
+
+  .circle-card {
+    padding-top: 3.5rem;
+    font-size: 0.8rem;
+    color: #fff;
+    margin: 1.5rem 0 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #a28b76; }
+    .circle-card br {
+      display: none; }
+
+  .build {
+    text-align: center; }
+    .build .title {
+      display: block; }
+    .build h4 {
+      margin-top: 3rem;
+      border-bottom: 1px dashed #333;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      display: inline-block;
+      line-height: 3rem; }
+      .build h4:first-letter {
+        font-size: 2em;
+        color: #f39b8b; }
+
+  .member {
+    background-color: #fff;
+    height: 70rem;
+    width: 100%;
+    padding-top: 10rem;
+    text-align: center;
+  }
+  .member__top {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+  .top_image {
+    width: auto;
+    height: 150px;
+    margin: 0 auto 0 0;
+    display: block;
+  }
+  .member__top--right {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 0.7rem;
+  }
+  .member__top--right li {
+    border-bottom: none;
+    line-height: 1.4rem;
+  }
+  .member__main-title {
+    display: block;
+    width: 70%;
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: solid 1px #333;
+  }
+  .member__main {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 2rem;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  .vacancy__list {
+    margin: 3rem auto 0 3rem;
+  }
+  .vacancy__list--item {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.7344rem;
+    font-weight: normal;
+  }
+  .vacancy h3 {
+    letter-spacing: 2px;
+    border-radius: 50px;
+    padding: 1.5rem 0.5rem;
+
+  }
+  .section {
+    padding: 2rem 0;
+  }
+  footer .container {
+    /* -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column; */
+            flex-flow: column; } }
+
+@media screen and (max-width:380px) {
+  .jumbotron__img {
+    width: 180%;
+    right: -15px;
+  }
+  
+  .circle-wrap {
+    margin-top: 5rem;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(2,minmax(180px,1fr));
+  }
+  .card__body {
+    font-size: 0.7rem;
+    padding: 1.5rem;
+    text-align: left;
+  }
+  .section {
+    padding: 2rem 0;
+  }
+  .circle-card {
+    font-size: 0.8rem;
+  }
+  .member{
+    background-color: #fff;
+    height: 70rem;
+    width: 100%;
+    padding-top: 10rem;
+    text-align: center;
+  }
+  .member__top {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+  .top_image {
+    width: auto;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+  .member__top--right {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 0.7rem;
+  }
+  .member__main-title {
+    display: block;
+    width: 70%;
+    margin: 4rem auto 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: solid 1px #333;
+  }
+  .member__main {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 1.8rem;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  .consulting-2 .title {
+    font-size: .75rem;
+    font-weight: bold;
+  }
+}
+
+
+
+/*# sourceMappingURL=responsive.css.map */

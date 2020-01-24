@@ -1,0 +1,197 @@
+//-------------- Color ----------------//
+$black: #333;
+$white: #fff;
+$navy: #000080;
+$pink: #f39b8b;
+$orange: #FFC9A8;
+$gold: #a28b76;
+
+@media screen and (max-width:1024px) {
+  //--------------------- Common -----------------------//
+  .title {
+    font-size: 2rem;
+    position: relative;
+    line-height: 1.4;
+    padding: 0.25em 1.5em;
+    display: inline-block;
+    &:before, &:after {
+      content:'';
+      width: 20px;
+      height: 20px;
+    }
+    &:before {
+      border-left: solid 3px #ff5722;
+      border-top: solid 3px #ff5722;
+      top:-10px;
+      left: 0;
+    }
+    &:after {
+      border-right: solid 3px #ff5722;
+      border-bottom: solid 3px #ff5722;
+      bottom:-10px;
+      right: 0;
+    }
+  }
+
+
+  //--------------------- Jumbotron -----------------------//
+  .jumbotron {
+    padding-bottom: 0;
+    border-radius: 0;
+    &__img {
+      width: 400px;
+      bottom: 0;
+    }
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 10px;
+      line-height: 5rem;
+    }
+  }
+
+  //--------------------- Consulting -----------------------//
+  .consulting {
+    &__description {
+      &--item {
+        .consulting-text {
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+        .consulting-illust {
+          width: 20%;
+          &__number {
+            font-size: 1.2rem;
+            text-align: center;
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+
+  //-------------- Consulting2 ----------------//
+
+}
+
+
+@media screen and (max-width:500px) {
+  //--------------------- Common -----------------------//
+  .btn-default {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding-top: 40px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+
+  //--------------------- Jumbotron -----------------------//
+  .jumbotron {
+    padding-top: 120px;
+    padding-bottom: 0;
+    border-radius: 0;
+    &__img {
+      width: 280px;
+      right: -16px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 10px;
+      line-height: 4rem;
+    }
+  }
+
+
+  //--------------------- Consulting -----------------------//
+  .consulting {
+    &__description {
+      &--item {
+        .consulting-illust {
+          width: 20%;
+          &__number {
+            font-size: 1.2rem;
+          }
+          .fas {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  //--------------------- Consulting2 -----------------------//
+  .consulting-2 {
+    .card-wrap {
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+    .title {
+      font-size: 1rem;
+    }
+    &__sub-title {
+      font-size: .9rem;
+      line-height: 1.4rem;
+      &:first-letter {
+        font-size: 1.6rem;
+        color: $pink;
+      }
+    }
+  }
+
+
+  //--------------------- Last -----------------------//
+  .circle-wrap {
+    margin-top: 5rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .circle-card {
+    padding-top: 3.5rem;
+    font-size: 0.8rem;
+    color: $white;
+    margin: 1.5rem 0 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: $gold;
+    br {
+      display: none;
+    }
+  }
+
+  .build {
+    text-align: center;
+    .title {
+      display: block;
+    }
+    h3 {
+      margin-top: 3rem;
+      border-bottom: 1px dashed $black;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      display: inline-block;
+      line-height: 3rem;
+      &:first-letter {
+        font-size: 2em;
+        color: $pink;
+      }
+    }
+  }
+
+
+
+
+
+//--------------------- Footer -----------------------//
+  footer {
+    .container {
+      flex-flow: column;
+    }
+  }
+}
