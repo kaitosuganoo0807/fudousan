@@ -88,6 +88,12 @@
         font-size: 1.0rem;
       }
     }
+    .card__title {
+      font-size: 1rem;
+    }
+    .card__body {
+      height: 200px;
+    }
 
 @media screen and (max-width: 500px) {
   .btn-default {
@@ -109,7 +115,7 @@
       width: 150%;
       right: -16px; }
     .jumbotron h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       letter-spacing: 10px;
       line-height: 4rem; }
 
@@ -123,7 +129,6 @@
       .consulting-text {
         font-size: 0.7rem;
         line-height: 1rem;
-        padding: 1rem 1rem 0;
       }
 
   .consulting-2 .card-wrap {
@@ -138,11 +143,12 @@
       font-size: 1.6rem;
       color: #f39b8b; }
 
+      .card__title{
+        font-size: .8rem;
+      }
+
       .card__body {
-        font-size: 0.7rem;
-        line-height: 1rem;
-        padding: 1rem 1rem 0;
-        text-align: left;
+        height: 68%;
       }
       .card {
         height: 160px;
@@ -165,6 +171,31 @@
     background: #a28b76; }
     .circle-card br {
       display: none; }
+
+      .sub-title{
+        font-size: 0.6rem;
+        margin-top: 1rem;
+        color: rgba(51, 51, 51, 0.774);
+        position: relative;
+        display: inline-block;
+        padding: 0 25px;
+      }
+      .sub-title:before,.sub-title:after {
+        content: '';
+        position: absolute;
+        top: 43%;
+        display: inline-block;
+        width: 20px;
+        height: 4px;
+        border-top: solid 1px #a28b76;
+        border-bottom: solid 1px #a28b76;
+      }
+      .sub-title:before {
+        left:0;
+      }
+      .sub-title:after {
+        right: 0;
+      }
 
   .build {
     text-align: center; }
@@ -251,7 +282,7 @@
         -ms-flex-flow: column; */
             flex-flow: column; } }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:350px) {
   .jumbotron__img {
     width: 180%;
     right: -15px;
@@ -265,7 +296,6 @@
   }
   .card__body {
     font-size: 0.7rem;
-    padding: 1.5rem;
     text-align: left;
   }
   .section {
@@ -318,6 +348,40 @@
   .consulting-2 .title {
     font-size: .75rem;
     font-weight: bold;
+  }
+  .card__title {
+    font-size: .7rem;
+  }
+  .card__body {
+    height: 70%;
+  }
+  .circle-card {
+    padding-top: 3rem;
+    font-size: 0.6rem;
+    color: #fff;
+    margin: 1.5rem 0 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #a28b76;
+  }
+  .sub-title {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+    color: rgba(51, 51, 51, 0.774);
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .sub-title:before,.sub-title:after {
+    content: '';
+    position: absolute;
+    top: 43%;
+    display: inline-block;
+    width: 10px;
+    height: 4px;
+    border-top: solid 1px #a28b76;
+    border-bottom: solid 1px #a28b76;
   }
 }
 

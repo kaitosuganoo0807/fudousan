@@ -194,9 +194,12 @@ header {
     padding: 1rem 0;
     background: #a28b76; }
   .card__body {
-    font-size: 1.1rem;
-    padding: 1.5rem;
-    text-align: left; }
+    width: 100%;
+    height: 190px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
 
 .vacancy {
   text-align: center; }
@@ -235,6 +238,30 @@ header {
   text-align: center; }
   .borrow .title {
     display: block; }
+    .sub-title{
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: rgba(51, 51, 51, 0.774);
+      position: relative;
+      display: inline-block;
+      padding: 0 65px;
+    }
+    .sub-title:before,.sub-title:after {
+      content: '';
+      position: absolute;
+      top: 43%;
+      display: inline-block;
+      width: 59px;
+      height: 4px;
+      border-top: solid 1px #a28b76;
+      border-bottom: solid 1px #a28b76;
+    }
+    .sub-title:before {
+      left:0;
+    }
+    .sub-title:after {
+      right: 0;
+    }
 
 .circle-wrap {
   margin-top: 5rem;
@@ -346,7 +373,7 @@ footer {
       footer .sm li:last-of-type {
         margin-right: none; }
       footer .sm li a img {
-        width: 32px; }
+        width: 50px; }
 
 .member {
   background-color: #fff;
