@@ -238,30 +238,7 @@ header {
   text-align: center; }
   .borrow .title {
     display: block; }
-    .sub-title{
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      color: rgba(51, 51, 51, 0.774);
-      position: relative;
-      display: inline-block;
-      padding: 0 65px;
-    }
-    .sub-title:before,.sub-title:after {
-      content: '';
-      position: absolute;
-      top: 43%;
-      display: inline-block;
-      width: 59px;
-      height: 4px;
-      border-top: solid 1px #a28b76;
-      border-bottom: solid 1px #a28b76;
-    }
-    .sub-title:before {
-      left:0;
-    }
-    .sub-title:after {
-      right: 0;
-    }
+
 
 .circle-wrap {
   margin-top: 5rem;
@@ -269,15 +246,28 @@ header {
   gap: 20px;
   grid-template-columns: repeat(2, minmax(300px, 1fr)); }
 
+.circle-big{
+  position: relative;
+}
+
 .circle-card {
-  padding-top: 7.5rem;
   font-size: 1.3rem;
   color: #fff;
   margin: 1.5rem auto 0;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: #a28b76; }
+}
+.circle-text{
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.637);
+  top: 46%;
+  left: 29%;
+  z-index: 1;
+  font-weight: bold;
+  display: block;
+}
 
 .build {
   text-align: center; }

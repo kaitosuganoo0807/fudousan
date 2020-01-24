@@ -37,6 +37,7 @@
     line-height: 3rem;
     text-align: left;
   }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -94,6 +95,12 @@
     .card__body {
       height: 200px;
     }
+
+    .circle-text{
+      left: 27%;
+      font-size: 1.3rem;
+    }
+    
 
 @media screen and (max-width: 500px) {
   p {
@@ -166,7 +173,6 @@
     grid-template-columns: repeat(2, minmax(180px, 1fr)); }
 
   .circle-card {
-    padding-top: 3.5rem;
     font-size: 0.8rem;
     color: #fff;
     margin: 1.5rem 0 0;
@@ -174,33 +180,17 @@
     height: 160px;
     border-radius: 50%;
     background: #a28b76; }
+
+  .circle-text{
+    left: 15%;
+    font-size: .9rem;
+  }
+
+
     .circle-card br {
       display: none; }
 
-      .sub-title{
-        font-size: 0.6rem;
-        margin-top: 1rem;
-        color: rgba(51, 51, 51, 0.774);
-        position: relative;
-        display: inline-block;
-        padding: 0 25px;
-      }
-      .sub-title:before,.sub-title:after {
-        content: '';
-        position: absolute;
-        top: 43%;
-        display: inline-block;
-        width: 20px;
-        height: 4px;
-        border-top: solid 1px #a28b76;
-        border-bottom: solid 1px #a28b76;
-      }
-      .sub-title:before {
-        left:0;
-      }
-      .sub-title:after {
-        right: 0;
-      }
+
 
   .build {
     text-align: center; }
@@ -269,7 +259,7 @@
     font-size: 1rem;
   }
   h3 {
-    font-size: 0.7344rem;
+    font-size: 1.7344rem;
     font-weight: normal;
   }
   .vacancy h3 {
@@ -287,7 +277,7 @@
         -ms-flex-flow: column; */
             flex-flow: column; } }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:380px) {
   .jumbotron__img {
     width: 180%;
     right: -15px;
@@ -361,7 +351,6 @@
     height: 70%;
   }
   .circle-card {
-    padding-top: 3rem;
     font-size: 0.6rem;
     color: #fff;
     margin: 1.5rem 0 0;
@@ -373,23 +362,24 @@
   .circle-wrap {
     gap: 0px;
   }
-  .sub-title {
-    font-size: 0.5rem;
-    margin-top: 1rem;
-    color: rgba(51, 51, 51, 0.774);
-    position: relative;
-    display: inline-block;
-    padding: 0 15px;
+  
+  .circle-card {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 1.5rem auto 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
   }
-  .sub-title:before,.sub-title:after {
-    content: '';
+  .circle-text{
     position: absolute;
-    top: 43%;
-    display: inline-block;
-    width: 10px;
-    height: 4px;
-    border-top: solid 1px #a28b76;
-    border-bottom: solid 1px #a28b76;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.637);
+    top: 40%;
+    left: 15%;
+    z-index: 1;
+    font-weight: bold;
+    display: block;
   }
 }
 
