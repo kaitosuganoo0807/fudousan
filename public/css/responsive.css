@@ -88,18 +88,20 @@
         padding-left: 10px;
         font-size: 1.0rem;
       }
-    }
-    .card__title {
-      font-size: 1rem;
-    }
-    .card__body {
-      height: 200px;
-    }
 
-    .circle-text{
-      left: 27%;
-      font-size: 1.3rem;
+      .card__title {
+        font-size: 1rem;
+      }
+      .card__body {
+        height: 200px;
+      }
+  
+      .circle-text{
+        left: 19%;
+        font-size: 1.3rem;
+      }
     }
+    
     
 
 @media screen and (max-width: 500px) {
@@ -182,8 +184,12 @@
     background: #a28b76; }
 
   .circle-text{
-    left: 15%;
+    left: 6%;
+    top: 40%;
     font-size: .9rem;
+    width: 10rem;
+    height: auto;
+    text-align: center;
   }
 
 
@@ -259,7 +265,7 @@
     font-size: 1rem;
   }
   h3 {
-    font-size: 1.7344rem;
+    font-size: .666rem;
     font-weight: normal;
   }
   .vacancy h3 {
@@ -275,7 +281,14 @@
     /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column; */
-            flex-flow: column; } }
+            flex-flow: column; } 
+
+  footer h3 {
+    font-weight: lighter;
+    font-size: 1.6rem;
+    
+    }
+}
 
 @media screen and (max-width:380px) {
   .jumbotron__img {
@@ -372,14 +385,12 @@
     border-radius: 50%;
   }
   .circle-text{
-    position: absolute;
-    font-size: .8rem;
-    background-color: rgba(255, 255, 255, 0.637);
+    left: 6%;
     top: 40%;
-    left: 15%;
-    z-index: 1;
-    font-weight: bold;
-    display: block;
+    font-size: .9rem;
+    width: 10rem;
+    height: auto;
+    text-align: center;
   }
 }
 
