@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
   text-decoration: none;
@@ -54,28 +55,37 @@ h3 {
 .btn-default {
   width: 400px;
   -webkit-box-shadow: 0 5px #ee735d;
+  -moz-box-shadow: 0 5px #ee735d;
           box-shadow: 0 5px #ee735d;
   background: #f33412;
   color: #fff;
   -webkit-transition: .3s;
+  -moz-transition: .3s;
   transition: .3s;
   position: relative;
   z-index: 2; }
   .btn-default:hover {
     -webkit-transition: .3s;
+    -moz-transition: .3s;
     transition: .3s;
     color: #fff;
     opacity: .6; }
   .btn-default:active {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     -webkit-transform: translateY(5px);
-            transform: translateY(5px); }
+    -moz-transform: translateY(5px);
+    transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+  }
 
 header {
   z-index: 10;
   width: 100%;
   -webkit-box-shadow: 0 .5px 5px #666;
+  -moz-box-shadow: 0 .5px 5px #666;
           box-shadow: 0 .5px 5px #666; }
 
 .navbar {
@@ -183,6 +193,7 @@ header {
 .card {
   border-radius: 10px;
   -webkit-box-shadow: 0 1px 3px lightgray;
+  -moz-box-shadow: 0 1px 3px lightgray;
           box-shadow: 0 1px 3px lightgray;
   height: 250px; }
   .card__title {
@@ -215,7 +226,8 @@ header {
         margin-top: 0; }
       .vacancy__list--item:before {
         -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
         top: 50%;
         position: absolute;
         left: -40px;
@@ -224,7 +236,10 @@ header {
         height: 20px;
         display: inline-block;
         background-color: #a28b76;
-        border-radius: 50%; }
+        border-radius: 50%;
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+      }
   .vacancy h3 {
     letter-spacing: 3px;
     font-weight: bold;
