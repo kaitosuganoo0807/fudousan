@@ -278,9 +278,9 @@
     padding: 2rem 0;
   }
   footer .container {
-    /* -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column; */
+        -ms-flex-flow: column;
             flex-flow: column; } 
 
   footer h3 {
