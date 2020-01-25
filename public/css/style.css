@@ -12,7 +12,9 @@
 
 .container {
   max-width: 1080px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 12px;
+}
 
 h2 {
   font-weight: normal;
@@ -103,7 +105,7 @@ header {
   position: relative;
   border-radius: 0;
   padding-top: 150px;
-  height: 580px;
+  height: 650px;
   background: #fff; }
   .jumbotron .container {
     height: 100%;
@@ -118,8 +120,8 @@ header {
     left: 0; } */
   .jumbotron__img {
     position: absolute;
-    right: 0px;
-    bottom: -70px;
+    right: -180px;
+    bottom: -100px;
     width: 140%;
     z-index: 1;
     height: auto; }

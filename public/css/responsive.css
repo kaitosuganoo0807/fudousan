@@ -101,6 +101,12 @@
         font-size: 1.3rem;
       }
     }
+@media screen and (max-width: 800px) {
+  .circle-text {
+    left: 9%;
+    font-size: 1.3rem;
+  }
+}
     
     
 
@@ -126,7 +132,7 @@
     padding-bottom: 0;
     border-radius: 0; }
     .jumbotron__img {
-      width: 150%;
+      width: 250%;
       right: -16px; }
     .jumbotron h1 {
       font-size: 2.4rem;
@@ -292,7 +298,6 @@
 
 @media screen and (max-width:380px) {
   .jumbotron__img {
-    width: 180%;
     right: -15px;
   }
   
