@@ -61,12 +61,36 @@ h3 {
     border-left: solid 3px #ff5722;
     border-top: solid 3px #ff5722;
     top: 0;
-    left: 0; }
+    left: 200px; }
   .title:after {
     border-right: solid 3px #ff5722;
     border-bottom: solid 3px #ff5722;
     bottom: 0;
+    right: 200px; }
+.pp{
+  font-size: 1.9rem;
+  position: relative;
+  line-height: 1.4;
+  padding: 0.25em 1.5em;
+  display: inline-block;
+}
+  .pp:before, .pp:after {
+    content: '';
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    display: inline-block; }
+  .pp:before {
+    border-left: solid 3px #ff5722;
+    border-top: solid 3px #ff5722;
+    top: 0;
+    left: 0; }
+  .pp:after {
+    border-right: solid 3px #ff5722;
+    border-bottom: solid 3px #ff5722;
+    bottom: 0;
     right: 0; }
+
 
 .btn-default {
   width: 400px;
@@ -413,7 +437,7 @@ footer {
 
 .member {
   background-color: #fff;
-  height: 70rem;
+  height: 85rem;
   width: 100%;
   padding-top: 10rem;
   text-align: center;
@@ -423,7 +447,7 @@ footer {
 .member__top {
   margin: 0 auto;
   text-align: center;
-  width: 80%;
+  width: 70%;
   display: flex;
   margin: 0 25%;
 }
@@ -464,6 +488,18 @@ footer {
   text-align: left;
   font-variant: normal;
   font-weight: normal;
+  height: 100rem;
+}
+.text-oya{
+  display: flex;
+}
+.text-xxx{
+  font-size: 1em;
+  color: #f39b8b;
+}
+.build h4:first-letter {
+  font-size: 1em;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */

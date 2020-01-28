@@ -215,9 +215,6 @@
       font-size: .8rem;
       display: inline-block;
       line-height: 3rem; }
-      .build h4:first-letter {
-        font-size: 2em;
-        color: #f39b8b; }
 
   .member {
     background-color: #fff;
@@ -294,6 +291,13 @@
     font-size: 1.6rem;
     
     }
+  .pp{
+    font-size: .8rem;
+    position: relative;
+    line-height: 1.4;
+    padding: 0.25em 1.5em;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width:380px) {
@@ -319,7 +323,7 @@
   }
   .member{
     background-color: #fff;
-    height: 70rem;
+    height: 75rem;
     width: 100%;
     padding-top: 10rem;
     text-align: center;
@@ -396,6 +400,13 @@
     width: 11rem;
     height: auto;
     text-align: center;
+  }
+  .pp{
+    font-size: .7rem;
+    position: relative;
+    line-height: 1.4;
+    padding: 0.25em 1.5em;
+    display: inline-block;
   }
 }
 
