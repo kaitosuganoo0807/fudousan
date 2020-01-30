@@ -437,7 +437,7 @@ footer {
 
 .member {
   background-color: #fff;
-  height: 85rem;
+  height: 95rem;
   width: 100%;
   padding-top: 10rem;
   text-align: center;
@@ -482,13 +482,13 @@ footer {
 }
 
 .member__main {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   line-height: 3.8rem;
   text-align: left;
   font-variant: normal;
   font-weight: normal;
-  height: 100rem;
+  height: auto;
 }
 .text-oya{
   display: flex;
