@@ -4,7 +4,7 @@ $(function() {
       url: $('#form').attr('action'),
       data: $('#form').serialize(),
       type: 'POST',
-      dataType: 'json',
+      dataType: 'xml',
       statusCode: {
         0: function() {
         },
