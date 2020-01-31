@@ -437,7 +437,7 @@ footer {
 
 .member {
   background-color: #fff;
-  height: 95rem;
+  height: auto;
   width: 100%;
   padding-top: 10rem;
   text-align: center;
@@ -484,7 +484,7 @@ footer {
 .member__main {
   width: 35%;
   margin: 0 auto;
-  line-height: 3.8rem;
+  line-height: 2rem;
   text-align: left;
   font-variant: normal;
   font-weight: normal;
