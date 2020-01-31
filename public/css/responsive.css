@@ -1,7 +1,7 @@
 @media screen and (max-width:1240px) {
   .member {
     background-color: #fff;
-    height: 70rem;
+    height: auto;
     width: 100%;
     padding-top: 10rem;
     text-align: center;
@@ -32,7 +32,7 @@
     border-bottom: solid 1px #333;
   }
   .member__main {
-    width: 85%;
+    width: 50%;
     margin: 0 auto;
     line-height: 3rem;
     text-align: left;
@@ -102,6 +102,12 @@
       }
     }
 @media screen and (max-width: 800px) {
+  .member__main {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 3rem;
+    text-align: left;
+  }
   .circle-text {
     left: 6%;
     font-size: 1.3rem;
@@ -218,7 +224,7 @@
 
   .member {
     background-color: #fff;
-    height: 70rem;
+    height: auto;
     width: 100%;
     padding-top: 10rem;
     text-align: center;
@@ -259,7 +265,7 @@
     margin: 0 auto;
     line-height: 1.8rem;
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .vacancy__list {
     margin: 3rem auto 0 3rem;
@@ -323,7 +329,7 @@
   }
   .member{
     background-color: #fff;
-    height: 75rem;
+    height: auto;
     width: 100%;
     padding-top: 10rem;
     text-align: center;
