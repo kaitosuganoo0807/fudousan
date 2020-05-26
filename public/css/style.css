@@ -429,11 +429,23 @@ footer {
     list-style: none;
     overflow: auto; }
     footer .sm li {
-      margin-right: 1rem; }
+      margin-right: 4rem; }
       footer .sm li:last-of-type {
         margin-right: none; }
       footer .sm li a img {
-        width: 50px; }
+        width: 50px;
+       }
+    footer .sm a{
+      color: #fff;
+      font-size: 1.5rem;
+    }
+      footer .sm .new-link{
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+      footer .sm .new-link a{
+      }
 
 .member {
   background-color: #fff;
@@ -523,5 +535,9 @@ footer {
     border-bottom: solid 3px #ff5722;
     bottom: 0;
     right: 0; }
+
+.new-link-into{
+  border-bottom: 2px solid #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
